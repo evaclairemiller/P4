@@ -49,7 +49,7 @@ a:hover {
 }
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 50px 50px;
 }
 
 .bloc-md {
@@ -131,7 +131,7 @@ a:hover {
 .author-name {
     font-style: normal;
     color: rgb(111, 111, 111);
-    line-height: 34px;
+    line-height: 50px;
 }
 
 .d-bloc .a-btn,
@@ -279,12 +279,14 @@ a:hover {
     border-color: rgba(0, 0, 0, .3);
 }
 
-.voffset {
-    margin-top: 30px;
+.row.voffset {
+    margin: 10px auto;
+    padding: 0;
 }
 
-.voffset-lg {
-    margin-top: 80px;
+.row.voffset-lg {
+    margin: 10px auto;
+    padding: 0;
 }
 
 .row-no-gutters {
@@ -496,8 +498,13 @@ button {
     box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
 }
 
+.col-sm-6 {
+    padding: 15px;
+}
+
 .col-sm-12 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .icon-md {
@@ -732,6 +739,8 @@ p {
 h2 {
     font-size: 22px;
     line-height: 1.4em;
+    margin: auto;
+    max-width: 640px;
 }
 
 h3 {
@@ -741,9 +750,9 @@ h3 {
     color: #333333!important;
 }
 
-.med-width-whitespace {
+.row.voffset-lg.med-width-whitespace {
     max-width: 800px;
-    margin: auto auto auto auto;
+    margin: 30px auto;
     box-shadow: 0px 0px 0px #000000;
 }
 
@@ -766,11 +775,6 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
-}
-
-.portfolio-row {
-    margin-bottom: 44px;
-    margin-top: 50px;
 }
 
 .avatar {
@@ -800,7 +804,9 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFFFFF!important;
+    z-index: 100;
+    position: relative;
 }
 
 .btn-atomic-tangerine {
@@ -918,13 +924,15 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
-    .col-sm-6 {
-        padding-bottom: 15px;
+    .row.voffset-lg.med-width-whitespace {
+        margin: 5px auto;
     }
-    .row {
-        padding: 20px 5px 40px;
+    .col-sm-4 {
+        max-width: 500px;
+        margin: auto;
     }
-    .row.foot, .row.row-no-gutters.social {
+    .col-xs-12 {
+        margin-top: 20px;
     }
     .page-container {
         overflow-x: hidden;
@@ -1020,8 +1028,7 @@ h4 {
     }
     .bloc-sm,
     .bloc-md {
-        padding-left: 0;
-        padding-right: 0;
+        padding: 40px 5px;
     }
     .bloc-tile-2 .container,
     .bloc-tile-3 .container,
@@ -1036,15 +1043,6 @@ h4 {
     }
     .btn-dwn {
         display: none;
-    }
-    .voffset {
-        margin-top: 5px;
-    }
-    .voffset-md {
-        margin-top: 20px;
-    }
-    .voffset-lg {
-        margin-top: 30px;
     }
     form {
         padding: 5px;
