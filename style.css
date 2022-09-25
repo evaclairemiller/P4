@@ -17,6 +17,10 @@ img {
     margin: auto;
 }
 
+.email {
+    color: rgb(60, 60, 254)!important;
+}
+
 a:hover {
     text-decoration: none;
     cursor: pointer;
