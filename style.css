@@ -13,6 +13,10 @@ button {
     outline: none!important;
 }
 
+img {
+    margin: auto;
+}
+
 a:hover {
     text-decoration: none;
     cursor: pointer;
@@ -117,6 +121,17 @@ a:hover {
 
 .d-bloc .divider-h span {
     border-color: rgba(255, 255, 255, .2);
+}
+
+.quote {
+    font-style: italic;
+    line-height: 28px;
+}
+
+.author-name {
+    font-style: normal;
+    color: rgb(111, 111, 111);
+    line-height: 34px;
 }
 
 .d-bloc .a-btn,
@@ -890,6 +905,9 @@ h4 {
 }
 
 @media (max-width: 767px) {
+    .col-sm-6 {
+        padding-bottom: 15px;
+    }
     .page-container {
         overflow-x: hidden;
         position: relative;
