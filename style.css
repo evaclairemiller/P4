@@ -130,12 +130,15 @@ a:hover {
 .quote {
     font-style: italic;
     line-height: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .author-name {
     font-style: normal;
     color: rgb(111, 111, 111);
-    line-height: 50px;
+    line-height: 30px;
 }
 
 .d-bloc .a-btn,
@@ -883,13 +886,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -908,8 +911,6 @@ h4 {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -919,8 +920,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -1070,5 +1069,14 @@ h4 {
     .bloc {
         padding-left: 0;
         padding-right: 0;
+    }
+    .black-background {
+        padding: 15px;
+    }
+    .col-sm-12 {
+        padding: 0px;
+    }
+    .cta-hero {
+        padding: 12px 18px;
     }
 }
