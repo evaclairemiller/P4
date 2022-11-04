@@ -790,8 +790,12 @@ h4 {
     margin-top: 24px;
 }
 
-.white {
-    color: #FFFFFF !important;
+.black {
+    color: black !important;
+}
+
+.tc-black {
+    color: black !important;
 }
 
 .portfolio-thumb {
