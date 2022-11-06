@@ -834,6 +834,14 @@ h4 {
     position: relative;
 }
 
+.white {
+    color: white !important;
+}
+
+.col-sm-4>a {
+    color: black !important;
+}
+
 .btn-atomic-tangerine {
     background: #F3976C;
     color: black !important;
